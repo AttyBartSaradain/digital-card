@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Business Card</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to right, #1f4037, #99f2c8);
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: 30px auto;
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        overflow: hidden;
+    }
+
+    header {
+        text-align: center;
+        padding: 40px 20px;
+        background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+        color: white;
+    }
+
+    header img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        border: 4px solid #fff;
+        object-fit: cover;
+    }
+
+    header h1 {
+        margin: 15px 0 5px;
+        font-size: 22px;
+    }
+
+    header p {
+        margin: 5px 0;
+        opacity: 0.9;
+    }
+
+    .buttons {
+        margin-top: 15px;
+    }
+
+    .btn {
+        display: inline-block;
+        margin: 5px;
+        padding: 10px 15px;
+        border-radius: 25px;
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+        transition: 0.3s;
+    }
+
+    .call { background: #28a745; }
+    .email { background: #007bff; }
+    .map { background: #ff9800; }
+    .download { background: #6f42c1; }
+
+    .btn:hover {
+        opacity: 0.85;
+        transform: scale(1.05);
+    }
+
+    section {
+        padding: 25px 30px;
+        border-bottom: 1px solid #eee;
+    }
+
+    section h2 {
+        color: #2c5364;
+        border-left: 5px solid #2c5364;
+        padding-left: 10px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    table th, table td {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    table th {
+        background: #2c5364;
+        color: white;
+    }
+
+    table tr:nth-child(even) {
+        background: #f9f9f9;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px;
+        font-size: 12px;
+        color: #777;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+    <img src="profile.jpg" alt="Profile Picture">
+    <h1>FSUPT ATTY BALTAZAR S SARADAIN, DSC, SCL</h1>
+    <p>Firefighter / Lawyer / Shariah Counsellor</p>
+
+    <div class="buttons">
+        <a href="tel:09176531831" class="btn call">📞 Call</a>
+        <a href="mailto:baltazar.saradain@gmail.com" class="btn email">✉ Email</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Cotabato+City" class="btn map">📍 Home</a>
+        <a href="saradain.vcf" class="btn download" download>⬇ Save Contact</a>
+    </div>
+</header>
+
+<section>
+    <h2>Personal Information</h2>
+    <p><strong>Contact:</strong> 09176531831</p>
+    <p><strong>Email:</strong> baltazar.saradain@gmail.com</p>
+    <p><strong>Home Address:</strong> 
+        <a href="https://www.google.com/maps/search/?api=1&query=NHA+Tanghal+Subdivision+Cotabato+City" target="_blank">
+        View Location</a>
+    </p>
+    <p><strong>Office Address:</strong> 
+        <a href="https://www.google.com/maps/search/?api=1&query=BFP+BARMM+Parang+Maguindanao" target="_blank">
+        View Location</a>
+    </p>
+    <p><strong>Designation:</strong> Chief, Regional Legal Service, BFP BARMM</p>
+</section>
+
+<section>
+    <h2>Civilian Schooling</h2>
+    <table>
+        <tr>
+            <th>Level</th>
+            <th>School</th>
+            <th>Course</th>
+            <th>Period</th>
+            <th>Year</th>
+            <th>Awards</th>
+        </tr>
+        <tr><td>Primary</td><td>Bus-bus Primary School</td><td>G1-2</td><td>1987-1989</td><td>N/A</td><td>N/A</td></tr>
+        <tr><td>Elementary</td><td>Port Area Elementary School</td><td>G3-6</td><td>1989-1993</td><td>1993</td><td>3rd Honors</td></tr>
+        <tr><td>Secondary</td><td>Notre Dame of Jolo</td><td>High School</td><td>1993-1997</td><td>1997</td><td>With Honors</td></tr>
+        <tr><td>College</td><td>ND Jolo College</td><td>BS Accountancy</td><td>1997-2001</td><td>2001</td><td>Cum Laude</td></tr>
+        <tr><td>Post Grad</td><td>WMSU</td><td>Juris Doctor</td><td>2004-2008</td><td>2008</td><td>None</td></tr>
+    </table>
+</section>
+
+<section>
+    <h2>Eligibilities</h2>
+    <table>
+        <tr>
+            <th>Name</th><th>Rating</th><th>Date</th><th>Place</th>
+        </tr>
+        <tr><td>Philippine Bar</td><td>76.57%</td><td>Sept 2011</td><td>UST Manila</td></tr>
+        <tr><td>Shariah Bar</td><td>90.15%</td><td>May 2006</td><td>CA Manila</td></tr>
+        <tr><td>PD 907</td><td>N/A</td><td>N/A</td><td>N/A</td></tr>
+        <tr><td>Civil Service</td><td>80.28%</td><td>Mar 2000</td><td>ND Jolo</td></tr>
+    </table>
+</section>
+
+<section>
+    <h2>Mandatory Trainings</h2>
+    <table>
+        <tr>
+            <th>Course</th><th>Institution</th><th>Period</th><th>Awards</th>
+        </tr>
+        <tr><td>PSOSEC</td><td>PPSC</td><td>2022-2023</td><td>Top 4</td></tr>
+        <tr><td>FOAC</td><td>NFTI</td><td>2015</td><td>Top 2</td></tr>
+        <tr><td>Recruit Course</td><td>NFTI</td><td>2004</td><td>Top 1</td></tr>
+    </table>
+</section>
+
+<section>
+    <h2>Awards and Decorations</h2>
+    <ul>
+        <li>Medalya ng Pambihirang Paglilingkod</li>
+        <li>Medalya ng Kadakilaan</li>
+        <li>Medalya ng Kasanayan</li>
+    </ul>
+</section>
+
+<footer>
+    Digital Business Card © 2026
+</footer>
+
+</div>
+
+</body>
+</html>
